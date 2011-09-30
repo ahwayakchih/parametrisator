@@ -117,7 +117,7 @@
 			if (!isset($_POST['parametrisator']['xpaths']) || empty($_POST['parametrisator']['xpaths'])) return;
 
 			if (!empty($_POST['parametrisator']['xslt'])) {
-				$XSLT = UTILITIES . '/'. preg_replace(array('%/+%', '%(^|/)../%'), '/', $_POST['parametrisator']['xslt']);
+				$XSLT = UTILITIES . '/'. preg_replace(array('%/+%', '%(^|/)\.\./%'), '/', $_POST['parametrisator']['xslt']);
 				if (file_exists($XSLT)) $parametrisator['xslt'] = $_POST['parametrisator']['xslt'];
 			}
 			else {
