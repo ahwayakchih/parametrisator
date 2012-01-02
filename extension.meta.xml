@@ -17,7 +17,7 @@
 		</author>
 	</authors>
 	<releases>
-		<release version="1.2" date="2012-01-02">Bugfix release.</release>
+		<release version="1.2" date="2012-01-02">Bugfix release. Thanks to liamegan and andrewminton for bug reports!</release>
 		<release version="1.1" date="2011-09-12" min="2.2">Official release: Added support for custom parameter names and for passing XML data through additional XSLT, just before data is selected into parameters.</release>
 	</releases>
 	<media>

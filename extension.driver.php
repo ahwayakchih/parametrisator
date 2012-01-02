@@ -3,8 +3,8 @@
 	
 		public function about() {
 			return array('name' => __('Parametrisator'),
-						 'version' => '1.1',
-						 'release-date' => '2011-09-12',
+						 'version' => '1.2',
+						 'release-date' => '2012-01-02',
 						 'author' => array('name' => 'Marcin Konicki',
 										   'website' => 'http://ahwayakchih.neoni.net',
 										   'email' => 'ahwayakchih@neoni.net'),
