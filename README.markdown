@@ -1,8 +1,8 @@
 # Parametrisator
 
-- Version: 1.1
+- Version: 1.2
 - Author: Marcin Konicki (http://ahwayakchih.neoni.net)
-- Build Date: 12 September 2011
+- Build Date: 2 January 2012
 - Requirements: Symphony version 2.2 or later.
 
 
@@ -25,6 +25,7 @@ Original XML data will stay untouched. It will be used by pages and utilities as
 
 ## Changelog
 
+- **1.2** Bugfix release.
 - **1.1** Official release. Added support custom parameter names and for passing XML data through additional XSLT, just before data is selected into parameters.
 - **1.0** Internal release.
 

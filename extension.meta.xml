@@ -1,0 +1,26 @@
+<extension id="parametrisator" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+	<name>Parametrisator</name>
+	<description>Parametrisator allows you to use XSLT and XPath to select data from data-source generated XML, turn it into parameters and add to the parameter pool used by other data-sources.</description>
+	<repo type="github">https://github.com/ahwayakchih/parametrisator</repo>
+	<url type="discuss">http://symphony-cms.com/discuss/thread/77263/</url>
+	<url type="issues">https://github.com/ahwayakchih/parametrisator/issues</url>
+	<types>
+		<type>Other</type>
+		<type>Parameter output</type>
+		<type>Data-source</type>
+	</types>
+	<authors>
+		<author>
+			<name github="ahwayakchih" symphony="ahwayakchih">Marcin Konicki</name>
+			<email>ahwayakchih@neoni.net</email>
+			<website>http://ahwayakchih.neoni.net</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="1.2" date="2012-01-02">Bugfix release.</release>
+		<release version="1.1" date="2011-09-12" min="2.2">Official release: Added support for custom parameter names and for passing XML data through additional XSLT, just before data is selected into parameters.</release>
+	</releases>
+	<media>
+		<item type="image" url="https://github.com/ahwayakchih/parametrisator/raw/master/screenshots/flyer.png">Screenshots.</item>
+	</media>
+</extension>
