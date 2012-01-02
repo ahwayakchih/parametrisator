@@ -82,14 +82,14 @@
 			$parametrisator['xpaths'] = array_filter($parametrisator['xpaths']);
 
 			// Get list of utilities
-			$utilities = General::listStructure(UTILITIES, array('xsl'), false, 'asc', UTILITIES);
-			$utilities = $utilities['filelist'];
-
 			$xsltfile = $parametrisator['xslt'];
 			$parametrisator['xslt'] = '<option value="">'.__('Disabled').'</option>';
 
-			foreach ($utilities as $utility) {
-				$parametrisator['xslt'] .= '<option value="'.$utility.'"'.($xsltfile == $utility ? ' selected="selected"' : '').'>'.$utility.'</option>';
+			$utilities = General::listStructure(UTILITIES, array('xsl'), false, 'asc', UTILITIES);
+			if (is_array($utilities) && is_array($utilities['filelist'])) {
+				foreach ($utilities['filelist'] as $utility) {
+					$parametrisator['xslt'] .= '<option value="'.$utility.'"'.($xsltfile == $utility ? ' selected="selected"' : '').'>'.$utility.'</option>';
+				}
 			}
 
 			// Let our script know sort and order values.
