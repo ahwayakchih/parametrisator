@@ -6,8 +6,9 @@
 	<url type="issues">https://github.com/ahwayakchih/parametrisator/issues</url>
 	<types>
 		<type>Other</type>
-		<type>Parameter output</type>
-		<type>Data-source</type>
+		<type>Parameter Output</type>
+		<type>Data Source</type>
+		<type>Workflow</type>
 	</types>
 	<authors>
 		<author>
