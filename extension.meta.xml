@@ -5,9 +5,8 @@
 	<url type="discuss">http://symphony-cms.com/discuss/thread/77263/</url>
 	<url type="issues">https://github.com/ahwayakchih/parametrisator/issues</url>
 	<types>
-		<type>Other</type>
-		<type>Parameter output</type>
-		<type>Data-source</type>
+		<type>Data Sources</type>
+		<type>Workflow</type>
 	</types>
 	<authors>
 		<author>
