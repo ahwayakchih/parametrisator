@@ -13,7 +13,6 @@
 		}
 
 		public function uninstall() {
-			return General::deleteFile(MANIFEST . '/parametrisator');
 		}
 		
 		public function update($previousVersion) {
