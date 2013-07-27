@@ -1,9 +1,9 @@
 # Parametrisator
 
-- Version: 1.3
+- Version: 1.4
 - Author: Marcin Konicki (http://ahwayakchih.neoni.net)
-- Build Date: 25 June 2012
-- Requirements: Symphony version 2.3 or later.
+- Build Date: 26 July 2013
+- Requirements: Symphony version 2.3.3 or later.
 
 
 ## Overview
@@ -25,6 +25,7 @@ Original XML data from parametrised data-source will stay untouched. It may be u
 
 ## Changelog
 
+- **1.4** Update for Symphony 2.3.3.
 - **1.3** Update for Symphony 2.3. This drops compatibility with Symphony 2.2. Parameter names are now dynamically updated on data-source edit pages.
 - **1.2** Bugfix release.
 - **1.1** Official release. Added support custom parameter names and for passing XML data through additional XSLT, just before data is selected into parameters.

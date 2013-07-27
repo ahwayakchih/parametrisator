@@ -3,8 +3,8 @@
 	
 		public function about() {
 			return array('name' => __('Parametrisator'),
-						 'version' => '1.3',
-						 'release-date' => '2012-06-25',
+						 'version' => '1.4',
+						 'release-date' => '2013-07-26',
 						 'author' => array('name' => 'Marcin Konicki',
 										   'website' => 'http://ahwayakchih.neoni.net',
 										   'email' => 'ahwayakchih@neoni.net'),
@@ -137,7 +137,7 @@
 
 			// Update dependencies
 			// From content.blueprintsdatasources.php
-			if(preg_match_all('@(\$ds-[-_0-9a-z]+)@i', $parametrisator, $matches)){
+			if (preg_match_all('@(\$ds-[0-9a-z_\.\-]+)@i', $parametrisator, $matches)) {
 				if (!is_array($context['dependencies'])) $context['dependencies'] = array();
 				$context['dependencies'] = General::array_remove_duplicates(array_merge($matches[1], $context['dependencies']));
 				$context['contents'] = preg_replace('/'.preg_quote('$this->_dependencies = array(').'[^\)]*\);/', '$this->_dependencies = array(\''.implode("', '", $context['dependencies']).'\');', $context['contents']);
@@ -201,7 +201,7 @@
 				if ($data === FALSE) continue;
 
 				$key = "ds-" . $context['datasource']->dsParamROOTELEMENT . "-" . $handle;
-				if(!is_array($context['param_pool'][$key])) $context['param_pool'][$key] = array();
+				if (!is_array($context['param_pool'][$key])) $context['param_pool'][$key] = array();
 
 				foreach ($data as $node) {
 					$context['param_pool'][$key][] = $node->nodeValue;
