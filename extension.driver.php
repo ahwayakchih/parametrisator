@@ -161,13 +161,17 @@
 			if (is_object($context['xml'])) {
 				$xml = $context['xml']->generate(false);
 			}
-			else {
-				$xml = $result;
+
+			if (!$xml) {
+				return;
 			}
 
 			$dom = new DOMDocument();
 			$dom->strictErrorChecking = false;
-			$dom->loadXML($xml);
+			if (!$dom->loadXML($xml)) {
+				// TODO: create some kind of an "parametrisator error" parameter?
+				return;
+			}
 
 			if (!empty($context['datasource']->dsParamParametrisator['xslt'])) {
 				$XSLTfilename = UTILITIES . '/'. preg_replace(array('%/+%', '%(^|/)../%'), '/', $context['datasource']->dsParamParametrisator['xslt']);
